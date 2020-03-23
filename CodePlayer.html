@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code Player</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <script src="jquery-ui/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div id="welcome">
+		<p id="msg">Welcome to Code Player</p>
+	</div>
+	<div id="mainContainer">
+	    <div id="div1">
+	        <span id="text1">Code Player</span>
+	        <span id="html" class="button active">HTML</span>
+	        <span id="css" class="button">CSS</span>
+	        <span id="javascript" class="button">Javascript</span>
+	        <span id="output" class="button">Output</span>
+	    </div>
+	    <textarea id="htmlPanel" class="panel"><p id="text">Hello there!</p></textarea>
+	    <textarea id="cssPanel" class="panel hidden">#text{font-family:helvetica, sans-serif;color: red;}</textarea>
+	    <textarea id="javascriptPanel" class="panel hidden">document.getElementById("text").style.fontSize = "200%";</textarea>
+	    <iframe id="outputPanel" class="panel hidden"></iframe>
+	</div>
+    <script type="text/javascript" src="script.js">    	
+    </script>
+</body>
+
+</html>
